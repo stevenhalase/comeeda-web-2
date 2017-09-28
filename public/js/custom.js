@@ -12,7 +12,7 @@ $(document).ready(function() {
         $(this).removeClass('process-selected')
       })
       $(e.target).toggleClass('process-selected')
-      $('.image-part').css('background-image', 'url(../public/images/'+$(e.target).data().image+'.png)')
+      $('.image-part').css('background-image', 'url(../images/'+$(e.target).data().image+'.png)')
     })
   })
 })
