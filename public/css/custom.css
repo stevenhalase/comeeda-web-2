@@ -148,3 +148,81 @@
 .process-selected:hover::before {
   border: 5px solid #DF5161!important;
 }
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs .tab-headers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.tabs .tab-headers div {
+    padding: 10px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    width: 33%;
+    border-bottom: 1px solid #DF5161;
+}
+
+.tabs .tab-contents {
+  width: 100%;
+  border: 1px solid #CCC!important;
+  background-color: #FFF;
+}
+
+.tabs .tab-contents .tab {
+  padding: 50px 5%;
+  display: none;
+}
+
+.tabs .tab-contents .tab div:first-child {
+  width: 33%;
+}
+
+.tabs .tab-contents .tab div:last-child {
+  width: 66%;
+}
+
+.tabs .tab-contents .tab div p {
+  padding: 20px 50px;
+}
+
+.tabs .tab-contents .tab div img {
+  border-radius: 50%;
+}
+
+.tab-header--selected {
+  border-top: 2px solid #DF5161!important;
+  border-left: 1px solid #DF5161!important;
+  border-right: 1px solid #DF5161!important;
+  border-bottom: none!important;
+  background-color: #FFF;
+}
+
+.tab--selected {
+  display: flex!important;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width:768px) {
+	.tabs .tab-contents .tab div:first-child {
+    width: 100%!important;
+  }
+
+  .tabs .tab-contents .tab div:last-child {
+    width: 100%!important;
+  }
+
+  .tab--selected {
+    flex-direction: column;
+  }
+
+  .tabs .tab-contents .tab div img {
+    max-width: 250px;
+  }
+}
