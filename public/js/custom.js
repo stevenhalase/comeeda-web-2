@@ -8,11 +8,16 @@ $(document).ready(function() {
 
   $('.process-content .item').each(function(index) {
     $(this).click(function(e) {
+      console.log(typeof $(e.target).data().image, e)
       $('.process-content .item').each(function(index) {
         $(this).removeClass('process-selected')
       })
-      $(e.target).toggleClass('process-selected')
-      $('.image-part').css('background-image', 'url(../images/'+$(e.target).data().image+'.png)')
+      var target = e.target;
+      if (typeof $(e.target).data().image === 'undefined') {
+        target = e.target.parentElement;
+      }
+      $(target).toggleClass('process-selected')
+      $('.image-part').css('background-image', 'url(../images/'+$(target).data().image+'.png)')
     })
   })
 
