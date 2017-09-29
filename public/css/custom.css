@@ -221,6 +221,10 @@
   .tabs .tab-contents .tab div img {
     max-width: 250px;
   }
+
+  .tabs .tab-contents .tab div p {
+    padding: 20px!important;
+  }
 }
 
 .text-justify {
