@@ -222,3 +222,8 @@
     max-width: 250px;
   }
 }
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
