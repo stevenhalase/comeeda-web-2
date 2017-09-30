@@ -988,12 +988,12 @@ a.menu-toggle {
  * - 
  */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
 	#main-nav-wrap {
 		display: block;
 		width: 100%;
 		position: absolute;
-		top: 69px;
+		top: 66px;
 		right: 0;
 	}
 	a.menu-toggle {
@@ -1133,7 +1133,7 @@ a.menu-toggle {
  * -
  */
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:1024px) {
 	#main-nav-wrap ul.main-navigation {
 		display: block !important;
 	}

@@ -159,6 +159,41 @@
   max-width: 1000px;
 }
 
+.footer-bottom {
+  position: fixed!important;
+  bottom: 0!important;
+  width: 100vw!important;
+  padding: 20px 0!important;
+  background-color: #171b23!important;
+  z-index: 1000!important;
+}
+
+.footer-bottom .col-twelve {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-footer ul{
+  list-style: none;
+  margin-bottom: 0!important;
+}
+
+.social-footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width:1024px) {
+	.footer-bottom {
+    position: relative!important;
+    margin-top: 0!important;
+  }
+  
+  .footer-bottom .design-by {
+    display: none!important;
+  }
+}
+
 /**
  * responsive:
  * mission
