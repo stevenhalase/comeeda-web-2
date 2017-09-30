@@ -128,6 +128,54 @@
 	}
 }
 
+/** 
+ * ===================================================================
+ * mission section
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#mission {
+  background: #090909 url(../images/mission-bg.png) no-repeat center;
+  background-size: cover;
+	padding-top: 12rem;
+  padding-bottom: 9.6rem;
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+.mission-content {
+	margin-top: 6.6rem;
+	max-width: 1280px;
+}
+
+#mission h1,
+#mission p,
+#mission h5 {
+	color: #FFF!important;
+}
+
+#information .section-intro {
+  max-width: 1000px;
+}
+
+/**
+ * responsive:
+ * mission
+ * -
+ */
+
+@media only screen and (max-width:1140px) {
+	.mission-content {
+		max-width: 800px;
+	}
+}
+@media only screen and (max-width:600px) {
+	.mission-content {
+		max-width: 420px;
+	}
+}
+
 .open-text {
     display: block!important;
 }
@@ -225,6 +273,13 @@
   .tabs .tab-contents .tab div p {
     padding: 20px!important;
   }
+}
+
+.testimonials-intro {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 100px!important;
 }
 
 .text-justify {
